@@ -21,9 +21,7 @@ for word in words:
         if num == None:
             break
         else:
-            print("  ",numbers[num])
-            word = str(num+1).join(word.split(numbers[num]))
-    print(word)
+            word = word[:lowest_index+1] + str(num+1) + word[lowest_index+1:]
     first = None
     last = None
     for letter in word:
