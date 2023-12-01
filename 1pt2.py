@@ -1,6 +1,3 @@
-##
-# Dosn't work :(
-##
 file = open('./1.txt', 'r')
 words = file.read().split("\n")
 
